@@ -1,0 +1,32 @@
+{
+  "name": "next-js",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "antd": "^5.24.1",
+    "axios": "^1.7.9",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
+    "next": "15.1.7",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sass": "^1.85.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "typescript": "^5"
+  }
+}

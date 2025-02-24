@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+
+    .login {
+
+        a {
+            color: #fff;
+            background: #1677ff;
+            padding: 13px;
+            border-radius: 8px;
+            margin-right: 10px;
+
+            &:last-child {
+                background: transparent;
+                border: 1px solid #1677ff;
+            }
+        }
+    }
+
+    .space {
+        color: #fff;
+    }
+}
