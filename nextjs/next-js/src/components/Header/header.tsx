@@ -5,7 +5,7 @@ import { Dropdown, Space, Menu } from "antd";
 import { Header as Headeres } from "antd/es/layout/layout";
 import Link from "next/link";
 import Cookies from "js-cookie";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { verificarExpiracaoToken } from "../utils/verificarExpiracaoToken";
 import { getMenuItems, getMenus } from "../utils/menuConfig";
 import styles from "../../styles/header.module.scss";
@@ -13,6 +13,8 @@ import "@ant-design/v5-patch-for-react-19";
 
 export const Header = () => {
     const router = useRouter();
+    const pathname = usePathname();
+
     const [isTokenExpired, setIsTokenExpired] = useState<boolean | null>(null);
 
     useEffect(() => {
@@ -25,6 +27,12 @@ export const Header = () => {
         router.push("/");
     };
 
+    const getSelectedKey = () => {
+        if (pathname === "/") return "Home";
+        if (pathname.startsWith("/pedidos")) return "Pedidos";
+        return "";
+    };
+
     const filteredMenus = getMenus();
 
     return (
@@ -32,7 +40,7 @@ export const Header = () => {
             <Menu
                 theme="dark"
                 mode="horizontal"
-                defaultSelectedKeys={["Home"]}
+                selectedKeys={[getSelectedKey()]}
                 items={filteredMenus}
                 style={{ flex: 1, minWidth: 0 }}
             />

@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "dev": "uvicorn app.main:app --reload"
+    "uvicorn": "uvicorn app.main:app --reload"
   }
 }

@@ -30,6 +30,10 @@ export default function Login() {
 
             Cookies.set("token", access_token, { expires: 1 });
 
+            setTimeout(() => {
+                window.location.reload();
+            }, 100);
+            
             router.push("/pedidos");
         } catch (error: any) {
             if (error.response && error.response.status === 401) {
