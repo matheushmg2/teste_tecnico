@@ -22,10 +22,10 @@ yarn uvicorn
 ## Rodando o servido web
 - Volte para o diretório raiz
 - cd ..
-- ou se preferir
-- cd ../nextjs/next-js/
-  
 - Entre dentro do diretório
 - cd nextjs/nextjs
+
+- ou se preferir
+- cd ../nextjs/next-js/
 
 yarn dev
