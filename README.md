@@ -7,4 +7,5 @@
 source venv/bin/activate  # Linux/macOS
 
 - Para rodar o servidor
+
 yarn uvicorn
