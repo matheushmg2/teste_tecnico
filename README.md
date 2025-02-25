@@ -17,6 +17,11 @@ pip install -r requirements.txt
 yarn uvicorn
 
 - Para rodar o servido web
+- Volte para o diretório raiz
+- cd ..
+- ou se preferir
+- cd ../nextjs/next-js/
+  
 - Entre dentro do diretório
 - cd nextjs/nextjs
 
