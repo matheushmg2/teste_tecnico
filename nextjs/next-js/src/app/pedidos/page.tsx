@@ -101,12 +101,6 @@ export default function Pedido() {
                 descricao: values.descricao,
             };
 
-            const id = editingOrder.id as string;
-
-            console.log("id: ", id);
-
-            console.log("editingOrder: ", editingOrder);
-
             await axios.put(
                 `${API_URL}/pedidos/${editingOrder.id as string}`,
                 valores,
