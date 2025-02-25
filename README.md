@@ -6,6 +6,12 @@
 
 source venv/bin/activate  # Linux/macOS
 
+## Instalar a biblioteca
+- Entre dentro do diretório 
+- cd app
+
+pip install -r requirements.txt
+
 - Para rodar o servidor
 
 yarn uvicorn
