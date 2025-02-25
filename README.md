@@ -6,17 +6,20 @@
 
 source venv/bin/activate  # Linux/macOS
 
+## Crie uma tabela no banco de dados mysql
+- Nomeie de "new_schema" para que a aplicação back-end funcione corretamente 
+
 ## Instalar a biblioteca
 - Entre dentro do diretório 
 - cd app
 
 pip install -r requirements.txt
 
-- Para rodar o servidor
+## Rodando o servidor
 
 yarn uvicorn
 
-- Para rodar o servido web
+## Rodando o servido web
 - Volte para o diretório raiz
 - cd ..
 - ou se preferir
